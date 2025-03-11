@@ -1,0 +1,172 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Centering the Task Manager */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Task Manager Box */
+.task-manager {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  text-align: center;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Input Fields */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Focus Effect */
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Add Task Button */
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Filter Dropdown */
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+/* Task List */
+.task-list {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Completed Task */
+.task-list .completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Task Buttons */
+.task-list button {
+  background-color: red;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.task-list button:hover {
+  background-color: darkred;
+}
+
+/* Theme Toggle Switch */
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.toggle-switch label {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .task-manager {
+  background: #333;
+  color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  background: #555;
+  color: white;
+  border: 1px solid #888;
+}
+
+.dark-mode button {
+  background-color: #007bff;
+}
+
+.dark-mode .task-list li {
+  background: #444;
+}
+
+.dark-mode .task-list .completed {
+  color: #bbb;
+}

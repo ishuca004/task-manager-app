@@ -1,0 +1,11 @@
+.task-list {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .no-tasks {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+  }
+  
